@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import books from "../data/books";
 
 export default function Book() {
@@ -11,19 +11,11 @@ export default function Book() {
     setCurrentBook(foundBook);
   }, [bookSlug]);
 
-  if (currentBook) {
-    return (
-      <section className="Book">
-        <h1>{currentBook.title}</h1>
-        <p>{currentBook.author}</p>
-        <p>{currentBook.description}</p>
-      </section>
-    );
-  } else {
-    return (
-      <section className="Book">
-        <p>le livre n'existe pas</p>
-      </section>
-    );
-  }
+  return (
+    <section className="Book">
+      <h1>{currentBook.title}</h1>
+      <p>{currentBook.author}</p>
+      <p>{currentBook.description}</p>
+    </section>
+  );
 }
