@@ -11,6 +11,13 @@ export default function Book() {
     setCurrentBook(foundBook);
   }, [bookSlug]);
 
+  if(!currentBook){
+    return (
+      <section className="Book">
+        <p>Pas de livre</p>
+      </section>
+    )
+  }
   return (
     <section className="Book">
       <h1>{currentBook.title}</h1>
