@@ -11,7 +11,7 @@ export default function Header() {
         data-bs-theme="dark"
       >
         <Container className="container-fluid">
-            <Link className="navbar-brand" to='/'>Event Weather</Link>
+            <Link className="navbar-brand" to='/'>Vite Template</Link>
           {/* <NavbarToggle></NavbarToggle> */}
           <Navbar.Toggle aria-controls="navbarTop" />
           <Navbar.Collapse id="navbarTop">

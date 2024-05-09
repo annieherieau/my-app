@@ -1,8 +1,20 @@
 @import "node_modules/bootswatch/dist/cerulean/variables";
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootswatch/dist/cerulean/bootswatch";
 
-main{
+
+body {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .min-vh-100;
+}
+
+main {
   @extend .container;
   @extend .my-3;
+}
+
+footer {
+  text-align: center;
+  @extend .mt-auto;
 }
