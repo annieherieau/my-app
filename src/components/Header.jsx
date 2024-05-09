@@ -12,7 +12,6 @@ export default function Header() {
       >
         <Container className="container-fluid">
             <Link className="navbar-brand" to='/'>Vite Template</Link>
-          {/* <NavbarToggle></NavbarToggle> */}
           <Navbar.Toggle aria-controls="navbarTop" />
           <Navbar.Collapse id="navbarTop">
             <Nav className="navbar-nav me-auto">

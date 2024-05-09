@@ -2,19 +2,17 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootswatch/dist/cerulean/bootswatch";
 
-
-body {
-  @extend .d-flex;
-  @extend .flex-column;
-  @extend .min-vh-100;
-}
-
 main {
   @extend .container;
   @extend .my-3;
+  min-height: 86vh;
 }
 
 footer {
   text-align: center;
+  color: $gray-600;
+  @extend .p-3;
+  @extend .mt-5;
   @extend .mt-auto;
+  @extend .bg-dark;
 }
